@@ -21,6 +21,7 @@
 		A10000010000000000000012 /* SavedThoughtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000012; };
 		A10000010000000000000013 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000013; };
 		A10000010000000000000014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000014; };
+		A10000010000000000000017 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000017; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A20000010000000000000014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20000010000000000000015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20000010000000000000016 /* QuietBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuietBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000010000000000000017 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		A40000010000000000000005 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A20000010000000000000017 /* OnboardingView.swift */,
 				A20000010000000000000011 /* PopupView.swift */,
 				A20000010000000000000012 /* SavedThoughtsView.swift */,
 				A20000010000000000000013 /* SettingsView.swift */,
@@ -213,6 +216,7 @@
 				A10000010000000000000011 /* PopupView.swift in Sources */,
 				A10000010000000000000012 /* SavedThoughtsView.swift in Sources */,
 				A10000010000000000000013 /* SettingsView.swift in Sources */,
+				A10000010000000000000017 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,8 +359,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ianclark.QuietBuild;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ianclark.Signal;
+				PRODUCT_NAME = Signal;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -382,8 +386,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ianclark.QuietBuild;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ianclark.Signal;
+				PRODUCT_NAME = Signal;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

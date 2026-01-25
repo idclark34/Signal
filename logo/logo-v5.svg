@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - rounded square -->
+  <rect width="512" height="512" rx="96" fill="#1c1c1c"/>
+
+  <!-- Outer subtle atmosphere -->
+  <ellipse cx="256" cy="256" rx="230" ry="110" fill="url(#outerglow5)" opacity="0.25"/>
+
+  <!-- Inner focused glow -->
+  <ellipse cx="256" cy="256" rx="140" ry="40" fill="url(#innerglow5)" opacity="0.7"/>
+
+  <!-- Horizon line -->
+  <line x1="50" y1="256" x2="462" y2="256" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Dot with highlight effect -->
+  <circle cx="365" cy="256" r="15" fill="#333"/>
+  <circle cx="365" cy="256" r="12" fill="white"/>
+  <circle cx="362" cy="253" r="4" fill="white" opacity="0.5"/>
+
+  <defs>
+    <radialGradient id="outerglow5" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="white" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="innerglow5" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="white" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="white" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

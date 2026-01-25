@@ -1,0 +1,21 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - rounded square -->
+  <rect width="512" height="512" rx="96" fill="#1a1a1a"/>
+
+  <!-- Centered soft glow - smaller, more focused -->
+  <ellipse cx="280" cy="256" rx="120" ry="50" fill="url(#glow3)" opacity="0.6"/>
+
+  <!-- Horizon line - medium weight -->
+  <line x1="50" y1="256" x2="462" y2="256" stroke="white" stroke-width="3.5" stroke-linecap="round" opacity="0.95"/>
+
+  <!-- Dot - offset from glow center, clean and bright -->
+  <circle cx="390" cy="256" r="12" fill="white"/>
+
+  <defs>
+    <radialGradient id="glow3" cx="0.4" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="white" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="white" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

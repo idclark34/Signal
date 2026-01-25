@@ -42,6 +42,12 @@ class PopupScheduler {
 
     private func isWithinTimeWindow() -> Bool {
         let hour = Calendar.current.component(.hour, from: Date())
+
+        // Handle overnight ranges (e.g., 7 PM to 2 AM)
+        if settings.windowEndHour < settings.windowStartHour {
+            return hour >= settings.windowStartHour || hour < settings.windowEndHour
+        }
+
         return hour >= settings.windowStartHour && hour < settings.windowEndHour
     }
 }

@@ -52,6 +52,10 @@ class AppSettings: ObservableObject {
         didSet { UserDefaults.standard.set(windowEndHour, forKey: "windowEndHour") }
     }
 
+    @Published var hasCompletedOnboarding: Bool {
+        didSet { UserDefaults.standard.set(hasCompletedOnboarding, forKey: "hasCompletedOnboarding") }
+    }
+
     private init() {
         let defaults = UserDefaults.standard
 
@@ -73,6 +77,7 @@ class AppSettings: ObservableObject {
         if defaults.object(forKey: "windowEndHour") == nil {
             defaults.set(22, forKey: "windowEndHour") // 10 PM
         }
+        // hasCompletedOnboarding defaults to false if not set
 
         self.dailyPopupEnabled = defaults.bool(forKey: "dailyPopupEnabled")
         self.animationsEnabled = defaults.bool(forKey: "animationsEnabled")
@@ -80,5 +85,6 @@ class AppSettings: ObservableObject {
         self.frequency = PopupFrequency(rawValue: defaults.string(forKey: "frequency") ?? "") ?? .oneHour
         self.windowStartHour = defaults.integer(forKey: "windowStartHour")
         self.windowEndHour = defaults.integer(forKey: "windowEndHour")
+        self.hasCompletedOnboarding = defaults.bool(forKey: "hasCompletedOnboarding")
     }
 }
